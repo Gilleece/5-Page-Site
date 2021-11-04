@@ -62,6 +62,10 @@
     margin-top: 15vh;
 }
 
+.fade {
+    animation: fade 3s ease-out 1 both;
+}
+
 @media (max-width: 991.98px) {
     .main-container {
         margin-top: 10vh;
@@ -74,3 +78,14 @@
         margin-top: 5vh;
     }
  }
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: perspective(800px) translate3d(-30px, -35px, -145px) rotate3d(1, -1, 0, 40deg);
+    }
+    to{
+        opacity: 1;
+        transform: perspective(800px) translate3d(0, 0, 0);
+    }
+}
