@@ -23,6 +23,7 @@
 
 .hero-image {
     background-image: url("/images/hero.jpg");
+    object-fit: contain;
 }
 
 .btn-primary {
