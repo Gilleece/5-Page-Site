@@ -1,4 +1,12 @@
+/*  
+Fonts
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/*  
+General Styling
+*/
 
 * {
     font-family: 'Lato', sans-serif;
@@ -22,7 +30,7 @@
 }
 
 .hero-image {
-    background-image: url("/images/hero.jpg");
+    background-image: url("../images/hero.jpg");
     object-fit: contain;
 }
 
@@ -34,6 +42,7 @@
 
 .btn-social-icon {
     font-size: 200%;
+    color: black !important;
 }
 
 .copyright-text {
@@ -73,9 +82,9 @@
     margin-bottom: 50px;
 }
 
-.fade {
-    animation: fade 2s ease-out 1 both;
-}
+/*  
+Media Queries
+*/
 
 @media (max-width: 991.98px) {
     .main-container {
@@ -95,6 +104,14 @@
         width: 100%;
     }
  }
+
+/*  
+Animations
+*/
+
+.fade {
+    animation: fade 2s ease-out 1 both;
+}
 
 @keyframes fade{
     from{
